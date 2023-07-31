@@ -9,5 +9,6 @@ __email__ = ", ".join(["vinyard@g.harvard.edu",])
 import numpy as np
 
 
-def _ordered_chromosomes():
-    return ["chr{}".format(i) for i in np.append(np.arange(1, 23), "X")]
+def _ordered_chromosomes(chrom_name):
+    return f"chr{chrom_name}"
+    # return ["chr{}".format(i) for i in np.append(np.arange(1, 2), "X")]
